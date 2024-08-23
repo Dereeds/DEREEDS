@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6{
-    color:#6d3adf;
+    color:#FF9D00;
 }
 
 .titlegame {
@@ -43,7 +43,7 @@ ul {
 li {
     text-decoration: none;
     list-style-type: none;
-    color: #6d3adf;
+    color: #FF9D00;
 }
 
 /*=================================== TABLEAU ===================================*/
@@ -66,7 +66,7 @@ td {
 header nav.navbar {
     position: fixed;
     top: 0;right: 0;left: 0;
-    background: #1b1b1b;
+    background: #0E0E10;
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -93,13 +93,13 @@ header nav.navbar ul li a{
     display: block;
 }
 header nav.navbar ul li a:hover{
-    color: #6d3adf;
+    color: #FF9D00;
 }
 header nav.navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #1b1b1b;
+    background: #0E0E10;
     display: none;
 }
 header nav.navbar ul li ul li {
@@ -131,8 +131,8 @@ body {
 footer {
     flex-shrink: 0;
     width: 100%;
-    background: #1b1b1b;
-    color: #ffffff;
+    background: #0E0E10;
+    color: #fff;
     border-top: solid;
     border-top-width: 6px;
 }
@@ -204,7 +204,7 @@ div.footer_contact ul.footer_text li:hover a{
 /*================================================================================*/
 @media (prefers-color-scheme: dark){
     body {
-        background-color: #1b1b1b;
+        background-color: #0E0E10;
     }
 }
 @media (prefers-color-scheme: light){
