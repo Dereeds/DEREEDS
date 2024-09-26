@@ -1,0 +1,62 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #F3F1ED;
+}
+h2{
+    text-align: center;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ .top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.info {
+    background-color: #675846;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #F3F1ED;
+}
+
+p.titre-menu {
+    color: green;
+    text-transform: uppercase;
+}
+div.text,
+div.price{
+    margin: 20px;
+}
+
+.img-menu .img-size {
+    border-radius: 50%;
+    width: 50px;
+}
+/*=================================== LISTE ===================================*/
+
+div.block-left,
+div.block-right {
+    width: 50%;
+    display: inline-block;
+    justify-content: center;
+}
+div.principal {
+    display: flex;
+}
+div.block-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
