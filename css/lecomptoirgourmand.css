@@ -7,11 +7,6 @@
 body{
     background-color: #F3F1ED;
 }
-h2{
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
 
 .top {
     padding-top: 50px;
@@ -19,11 +14,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-div.block-menu{
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
 }
 div.info {
     background-color: #675846;
@@ -33,21 +23,18 @@ div.info {
     text-align: center;
     color: #F3F1ED;
 }
-
-div.img-menu{
-    padding-right: 30px;
-}
-div.price,
-div.text{
-    width: 50%
-}
-
-p.titre-menu {
-    color: green;
-    text-transform: uppercase;
-}
-
-.img-menu .img-size {
+div.one img.logo {
     border-radius: 50%;
-    width: 80px;
+    width: 150px;
+}
+div.one {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+div.choice{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
 }
