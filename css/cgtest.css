@@ -5,9 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 .top {
@@ -18,17 +18,22 @@ h2{
     align-items: center;
 }
 div.block {
-    background-color: red;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
 }
 div.block-menu{
+    margin: 10px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    background-color: black;
+    align-content: center;
+    justify-content: center;
 }
 div.info {
     background-color: #675846;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     color: #F3F1ED;
 }
@@ -36,14 +41,16 @@ div.info {
 div.img-menu{
     padding-right: 30px;
 }
-div.price,
-div.text{
-    width: 50%
+div.text {
+    padding-right: 50px;
 }
-
+div.price p{
+    margin: 50%;
+}
 p.titre-menu {
     color: green;
     text-transform: uppercase;
+    padding-bottom: 5px;
 }
 
 .img-menu .img-size {
