@@ -29,6 +29,10 @@ h4,
 h5,
 h6{
     color:#FF9D00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 40px;
 }
 
 .titlegame {
@@ -142,7 +146,7 @@ div.principal {
     text-align: center;
 }
 div.principal p {
-    padding: 5vw 10vw;
+    padding: 2vw 10vw;
     text-align: justify;
 }
 div.principal_footer{
@@ -158,6 +162,42 @@ div.bloc {
     flex-basis: 20%;
     margin: 0 15px;
     border-top: solid;
+}
+div.one {
+    margin-top: 12px;
+    background-color: #0E0E10;
+    text-align-last: center;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+div.one a.button {
+    background-color: WHITE;
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.one p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}  
+div.two {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+div.block-form {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
 }
 div.footer_page,
 div.footer_contact,
