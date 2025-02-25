@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6{
-    color:#FF9D00;
+    color:#5485b7;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -45,7 +45,7 @@ h1 {
 li {
     text-decoration: none;
     list-style-type: none;
-    color: #FF9D00;
+    color: #5485b7;
 }
 
 /*=================================== TABLEAU ===================================*/
@@ -91,7 +91,7 @@ header nav.navbar ul li a{
     display: block;
 }
 header nav.navbar ul li a:hover{
-    color: #FF9D00;
+    color: #5485b7;
 }
 header nav.navbar ul li ul {
     position: absolute;
@@ -228,7 +228,7 @@ div.footer_contact ul.footer_text li{
 div.footer_page ul.footer_text li:hover a,
 div.footer_social ul.footer_text li:hover a,
 div.footer_contact ul.footer_text li:hover a{
-    color: #FF9D00;
+    color: #5485b7;
     transition: 0.3s;
 }
 
