@@ -64,13 +64,13 @@ td {
 header nav.navbar {
     position: fixed;
     top: 0;right: 0;left: 0;
-    background: #0E0E10;
+    background: #fff;
     padding: 0px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    border-bottom: solid #ffffff;
+    border-bottom: solid #0E0E10;
 }
 header nav.navbar ul {
     list-style: none;
@@ -87,7 +87,7 @@ header nav.navbar ul li a{
     font-size: 20px;
     font-family: sans-serif;
     padding: 20px;
-    color: #fff;
+    color: #0E0E10;
     display: block;
 }
 header nav.navbar ul li a:hover{
@@ -97,7 +97,7 @@ header nav.navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #0E0E10;
+    background: #fff;
     display: none;
 }
 header nav.navbar ul li ul li {
@@ -108,7 +108,7 @@ header nav.navbar ul li ul li a {
     font-size: 15px;
     font-family: sans-serif;
     padding: 15px;
-    color: #fff;
+    color: #0E0E10;
     display: block;
 }
 
@@ -118,39 +118,33 @@ header nav.navbar ul li ul li a {
 body {
     /*background-image: url('../img/background.jpg');*/
     /*background-repeat: no-repeat;*/
-    background-color: #fff;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 /*================================================================================*/
 /*==================================== FOOTER ====================================*/
 /*================================================================================*/
 footer {
     flex-shrink: 0;
     width: 100%;
-    background: #0E0E10;
-    color: #fff;
+    background: #fff;
+    color: #0E0E10;
     border-top: solid;
     border-top-width: 6px;
 }
 footer a {
-    color: white;
+    color: #0E0E10;
 }
 /*================================================================================*/
 /*===================================== DIV =====================================*/
 /*================================================================================*/
-div.principal {
-    flex: 1 0 auto;
-    padding-top: 70px;
-    text-align: center;
-}
-div.principal p {
-    padding: 2vw 10vw;
-    text-align: justify;
-}
 div.principal_footer{
     max-width: 1000px;
     margin: 0 auto;
@@ -166,55 +160,35 @@ div.bloc {
     margin: 0 15px;
     border-top: solid;
 }
-div.one {
-    margin-top: 12px;
-    background-color: #0E0E10;
-    text-align-last: center;
-    color: white;
-    padding-top: 25px;
-    padding-bottom: 20px;
-}
-div.one a.button {
-    background-color: WHITE;
-    border: none;
-    color: black;
-    padding: 12px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-div.one p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 900px;
-    justify-content: center;
-    width: 100%;
-}
-.box {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-.box p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    max-width: 90%;
-}
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+            justify-content: center;
+        }
+        .box {
+            background: #5485b7;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .box p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ffffff;
+            max-width: 90%;
+        }
 div.block-form {
     width: 100px;
     height: 100px;
@@ -261,7 +235,7 @@ div.footer_contact ul.footer_text li:hover a{
 /*================================================================================*/
 @media (prefers-color-scheme: dark){
     body {
-        background-color: #0E0E10;
+        background-color: #fff;
     }
 }
 @media (prefers-color-scheme: light){
