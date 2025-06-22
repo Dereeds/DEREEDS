@@ -29,6 +29,10 @@ h4,
 h5,
 h6{
     color:#6d3adf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 40px;
 }
 
 .titlegame {
@@ -38,8 +42,6 @@ h6{
 
 /*=================================== LISTE ===================================*/
 
-ul {
-}
 li {
     text-decoration: none;
     list-style-type: none;
@@ -48,10 +50,6 @@ li {
 
 /*=================================== TABLEAU ===================================*/
 
-table {   
-}   
-tr {    
-}
 th {
     font-size: 15px;
 }
@@ -66,13 +64,13 @@ td {
 header nav.navbar {
     position: fixed;
     top: 0;right: 0;left: 0;
-    background: #1b1b1b;
+    background: #1c1c1c;
     padding: 0px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    border-bottom: solid #ffffff;
+    border-bottom: solid #fff;
 }
 header nav.navbar ul {
     list-style: none;
@@ -99,7 +97,7 @@ header nav.navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #1b1b1b;
+    background: #1c1c1c;
     display: none;
 }
 header nav.navbar ul li ul li {
@@ -120,11 +118,15 @@ header nav.navbar ul li ul li a {
 body {
     /*background-image: url('../img/background.jpg');*/
     /*background-repeat: no-repeat;*/
-    background-color: #fff;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 /*================================================================================*/
 /*==================================== FOOTER ====================================*/
 /*================================================================================*/
@@ -132,27 +134,16 @@ footer {
     flex-shrink: 0;
     width: 100%;
     background: #1b1b1b;
-    color: #ffffff;
+    color: #fff;
     border-top: solid;
     border-top-width: 6px;
 }
 footer a {
-    color: white;
+    color: #fff;
 }
 /*================================================================================*/
 /*===================================== DIV =====================================*/
 /*================================================================================*/
-div.principal {
-    flex: 1 0 auto;
-    padding-top: 70px;
-    color: #fff;
-}
-div.principal p {
-    padding: 350px;
-    text-align: center;
-    font-size: 50px;
-     font-family: 'Rajdhani', sans-serif;
-}
 div.principal_footer{
     max-width: 1000px;
     margin: 0 auto;
@@ -162,10 +153,47 @@ div.principal_footer{
     font-size: 16px;
     padding: 15px 0px 10px;
 }
+/*FOOTER*/
 div.bloc {
     flex-basis: 20%;
     margin: 0 15px;
     border-top: solid;
+}
+.container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+            justify-content: center;
+        }
+        .box {
+            background: #6d3adf;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .box p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff;
+            max-width: 90%;
+        }
+div.block-form {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
 }
 div.footer_page,
 div.footer_contact,
@@ -199,38 +227,8 @@ div.footer_contact ul.footer_text li:hover a{
     color: #6d3adf;
     transition: 0.3s;
 }
-div.B3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    padding-bottom: 100px;
-}
-div.team {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    border-radius: 10px;
-}
 
-div.player {
-    width: 350px;
-    height: 400px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-div.link {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-div.tri {
-    display: flex;
-    margin: 5px 10px;
-}
 /*================================================================================*/
 /*===================================== CHANGE COLOR SYSTEME =====================================*/
 /*================================================================================*/

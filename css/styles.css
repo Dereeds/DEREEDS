@@ -21,31 +21,24 @@ p {
 }
 
 /*=================================== TITRE ===================================*/
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
-    color:#5485b7;
+    color:#6d3adf;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     font-size: 40px;
 }
-
-.titlegame {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100px;
-}
-
 /*=================================== LISTE ===================================*/
 
 li {
     text-decoration: none;
     list-style-type: none;
-    color: #5485b7;
+    color: #6d3adf;
 }
 
 /*=================================== TABLEAU ===================================*/
@@ -63,14 +56,15 @@ td {
 
 header nav.navbar {
     position: fixed;
-    top: 0;right: 0;left: 0;
-    background: #fff;
-    padding: 0px 7%;
+    background: #1c1c1c;
+    padding: 0;
+    margin: 0;
+    padding-right: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
-    border-bottom: solid #0E0E10;
+    border-bottom: solid #fff;
 }
 header nav.navbar ul {
     list-style: none;
@@ -87,17 +81,17 @@ header nav.navbar ul li a{
     font-size: 20px;
     font-family: sans-serif;
     padding: 20px;
-    color: #0E0E10;
+    color: #fff;
     display: block;
 }
 header nav.navbar ul li a:hover{
-    color: #5485b7;
+    color: #6d3adf;
 }
 header nav.navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #fff;
+    background: #1c1c1c;
     display: none;
 }
 header nav.navbar ul li ul li {
@@ -108,7 +102,7 @@ header nav.navbar ul li ul li a {
     font-size: 15px;
     font-family: sans-serif;
     padding: 15px;
-    color: #0E0E10;
+    color: #fff;
     display: block;
 }
 
@@ -116,16 +110,9 @@ header nav.navbar ul li ul li a {
 /*===================================== BODY =====================================*/
 /*================================================================================*/
 body {
-    /*background-image: url('../img/background.jpg');*/
-    /*background-repeat: no-repeat;*/
-    font-family: Arial, sans-serif;
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: sticky;
 }
 
 /*================================================================================*/
@@ -134,16 +121,16 @@ body {
 footer {
     flex-shrink: 0;
     width: 100%;
-    background: #fff;
-    color: #0E0E10;
+    background: #1b1b1b;
+    color: #fff;
     border-top: solid;
     border-top-width: 6px;
 }
 footer a {
-    color: #0E0E10;
+    color: #fff;
 }
 /*================================================================================*/
-/*===================================== DIV =====================================*/
+/*===================================== DIV FOOTER =====================================*/
 /*================================================================================*/
 div.principal_footer{
     max-width: 1000px;
@@ -160,35 +147,7 @@ div.bloc {
     margin: 0 15px;
     border-top: solid;
 }
-.container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 900px;
-            width: 100%;
-            justify-content: center;
-        }
-        .box {
-            background: #5485b7;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .box img {
-            max-width: 60%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .box p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #ffffff;
-            max-width: 90%;
-        }
+
 div.block-form {
     width: 100px;
     height: 100px;
@@ -225,17 +184,38 @@ div.footer_contact ul.footer_text li{
 div.footer_page ul.footer_text li:hover a,
 div.footer_social ul.footer_text li:hover a,
 div.footer_contact ul.footer_text li:hover a{
-    color: #5485b7;
+    color: #6d3adf;
     transition: 0.3s;
 }
 
+/*================================================================================*/
+/*===================================== DIV BODY =====================================*/
+/*================================================================================*/
+div.principal {
+    padding-top: 100px;
+}
+div.box1 {
+    background: #6d3adf;
+    width: 100%;
+    height: 500px;
+}
+div.box2 {
+    background: #ce0a0a;
+    width: 100%;
+    height: 500px;
+}
+div.box3 {
+    background: #1d064d;
+    width: 100%;
+    height: 500px;
+}
 
 /*================================================================================*/
 /*===================================== CHANGE COLOR SYSTEME =====================================*/
 /*================================================================================*/
 @media (prefers-color-scheme: dark){
     body {
-        background-color: #fff;
+        background-color: #1b1b1b;
     }
 }
 @media (prefers-color-scheme: light){
